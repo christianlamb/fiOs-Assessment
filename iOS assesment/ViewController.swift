@@ -10,10 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+   
+    
+    @IBOutlet weak var ChangeableLabel: UILabel!
+    
+   
+    @IBOutlet weak var TextToChangeToInput: UITextField!
+    
+    @IBAction func TheClickMeButton(_ sender: Any) {
+        let input: String
+        input = TextToChangeToInput.text!
+        
+       ChangeableLabel.text = input
+        
+      TextToChangeToInput .text = ""
+        
     }
+    
+    
+
+    
+    
 
 
 }
